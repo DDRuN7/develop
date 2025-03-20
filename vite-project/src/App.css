@@ -1,42 +1,94 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+body {
+
+    color: white;
+    flex-direction: row;
+    margin-top: 50px;
+    justify-content: center;
+    font-family: sans-serif;
+    display: flex;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.wrapper {
+    background-image: url("./images/b94d764d0c6973a9392d1ab15a0902bf.jpg");
+    width: 700px;
+    padding: 30px;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.creat-form {
+    height: 40px;
+    width: 100%;
+    margin: 25px 0px;
+    border: 1px solid #3b36cc;
+    display: flex;
 }
 
-.card {
-  padding: 2em;
+.creat-form>input {
+    outline: none;
+    border: none;
+    background: none;
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
 }
 
-.read-the-docs {
-  color: #888;
+.creat-form>button {
+    border: none;
+    background-color: #3b36cc;
+    color: white;
+    width: 50px;
+    height: 100%;
+    cursor: pointer;
+}
+
+.todo {
+    background-color: #3b36cc;
+    height: 40px;
+    padding: 0 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo>p {
+    cursor: pointer;
+    width: 90%;
+    text-align: left;
+}
+.completed {
+    opacity: 0.4;
+    text-decoration: line-through 3px black;
+}
+.edit{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 8px;
+}
+.edit-form{
+    height: 40px;
+    width: 100%;
+    margin: 10px 0px;
+    border: 1px solid #3b36cc;
+    display: flex;
+}
+.edit-form > input{
+    outline: none;
+    border: none;
+    background: none;
+    color: white;
+    width: 90%;
+    height: 100%;
+    padding-left: 10px;
 }
